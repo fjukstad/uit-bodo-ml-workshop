@@ -1,7 +1,7 @@
 # uit-bodo-ml-workshop
-My notes and code for a workshop simple ML for students at UiT Bodø. I live
-coded the workshop, but had to have some notes somewhere. The `tidyverse`,
-`tidymodels` and `plumber` are just awesome pieces of software. 
+Sample code for a workshop on simple ML on health data for students at UiT Bodø.
+I'm live coding the workshop, but have to have my notes somewhere. The
+`tidyverse`, `tidymodels` and `plumber` are just awesome pieces of software.
 
 # Workshop in brief (live-coding this part)
 
