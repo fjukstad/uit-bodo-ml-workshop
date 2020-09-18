@@ -7,7 +7,7 @@ I'm live coding the workshop, but have to have my notes somewhere. The
 
 - Set up a workspace on [rstudio.cloud](http://rstudio.cloud)
 - Download the [Pima Indians Diabetes Database dataset](https://www.kaggle.com/uciml/pima-indians-diabetes-database) 
-  from Kaggle. You'll get something like [data/diabetes.csv](diabetes.csv). 
+  from Kaggle. You'll get something like [data/diabetes.csv](data/diabetes.csv). 
 - Create some sort of model. Take a look at [analysis.R](analysis.R) for a
   logistic regression model, aka peak ML.
 - Create a [plumber](https://www.rplumber.io/) API for your model, and run it!
