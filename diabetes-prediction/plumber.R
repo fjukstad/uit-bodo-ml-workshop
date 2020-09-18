@@ -1,6 +1,6 @@
 library(plumber)
 
-load("../model.Rda")
+log_reg = readRDS("../models/model.Rds")
 
 #* @apiTitle Bjørns Diabetes Prediction API
 #* 

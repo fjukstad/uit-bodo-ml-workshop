@@ -1,10 +1,8 @@
-library(readr)
-library(ggplot2)
-library(ggcorrplot)
-library(dplyr)
 library(tidymodels)
+library(tidyverse)
+library(ggcorrplot)
 
-data = read_csv("diabetes.csv", 
+data = read_csv("data/diabetes.csv", 
                 col_types = cols(Outcome=col_factor()))
 
 # Overall, this data set consists of 768 observations of 9 variables: 8
@@ -91,4 +89,4 @@ conf_mat(predictions, truth=Outcome, estimate=.pred_class)
 
 predict(log_reg, data.frame(Glucose=150, BMI=31, DiabetesPedigreeFunction=0.3), type="class")
 
-save(log_reg,file="model.Rda")
+saveRDS(log_reg,file="models/model.Rds")
