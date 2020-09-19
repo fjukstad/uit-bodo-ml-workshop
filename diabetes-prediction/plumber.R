@@ -5,9 +5,9 @@ log_reg = readRDS("../models/model.Rds")
 #* @apiTitle Bjørns Diabetes Prediction API
 #* 
 #* Tries to predict if person has diabetes or not.  
-#* @param glucose The blood glucose
-#* @param bmi The body mass index
-#* @param diabetesPedigreeFunction 
+#* @param glucose Plasma glucose concentration.
+#* @param bmi The body mass index (BMI).
+#* @param diabetesPedigreeFunction diabetes history in relatives and the genetic relationship of those relatives to the patient
 #* @post /predict
 function(glucose, bmi, diabetesPedigreeFunction) {
   input = data.frame(Glucose=as.numeric(glucose),
