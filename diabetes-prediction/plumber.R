@@ -1,6 +1,11 @@
 library(plumber)
+library(tidymodels)
 
-log_reg = readRDS("../models/model.Rds")
+# Within a docker container 
+log_reg = readRDS("/app/models/model.Rds")
+
+# Outside a container
+# log_reg = readRDS("../models/model.Rds")
 
 #* @apiTitle Bjørns Diabetes Prediction API
 #* 
@@ -10,6 +15,7 @@ log_reg = readRDS("../models/model.Rds")
 #* @param diabetesPedigreeFunction diabetes history in relatives and the genetic relationship of those relatives to the patient
 #* @post /predict
 function(glucose, bmi, diabetesPedigreeFunction) {
+
   input = data.frame(Glucose=as.numeric(glucose),
                                 BMI = as.numeric(bmi),
                                 DiabetesPedigreeFunction = as.numeric(diabetesPedigreeFunction))
