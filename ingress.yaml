@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: diabetes-predictor
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+  rules:
+    - host: diabetes-predictor.be8b9217d4bf4c339649.westeurope.aksapp.io
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: diabetes-predictor
+              servicePort: 8000
