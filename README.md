@@ -13,7 +13,8 @@ I'm live coding the workshop, but have to have my notes somewhere. The
   logistic regression model, aka peak ML.
 - Create a [plumber](https://www.rplumber.io/) API for your model, and run it!
   See [diabetes-prediction/diabetes-prediction.R](/diabetes-prediction/plumber.R)
-- Dockerize it with `docker build -t api .` and `docker run -p 8000:8000 -t api`
+- Dockerize it with `docker build -t api .` and `docker run -p 8000:8000 -t api`, 
+  and open [http://localhost:8000](http://localhost:8000).  
 - Over-engineer and deploy to Azure Kubernetes with `kubectl apply -f azure-diabetes-predictor.yaml`
 - Write an app? Maybe with [Svelte](https://svelte.dev/) since I haven't done
   that before. See [svelte-app/](svelte-app) for more on that.
