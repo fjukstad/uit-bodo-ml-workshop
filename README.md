@@ -14,5 +14,5 @@ I'm live coding the workshop, but have to have my notes somewhere. The
 - Create a [plumber](https://www.rplumber.io/) API for your model, and run it!
   See [diabetes-prediction/diabetes-prediction.R](/diabetes-prediction/plumber.R)
 - Dockerize it with `docker build -t api .` and `docker run -p 8000:8000 -t api`
-- Deploy
+- Over-enginner and deploy to Azure Kubernetes Service
 - Write an app?
